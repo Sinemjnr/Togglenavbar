@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        transition: all 1s ease-in-out;
+      }
+      nav h3 {
+        margin: 30px 0;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      li {
+        margin-right: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      .hero {
+        height: calc(100vh - 70px);
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero h1 {
+        text-transform: uppercase;
+        color: white;
+      }
+      .hero p {
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+      }
+      .btn {
+        background-color: white;
+        display: inline-block;
+        color: #333;
+        padding: 25px 18px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: opacity 0.15s;
+      }
+      .btn:hover {
+        opacity: 0.7;
+      }
+      span {
+        position: fixed;
+        color: white;
+        left: 5%;
+        top: 5%;
+        display: none;
+      }
+      .show {
+        height: 250px;
+        
+      }
+
+      @media screen and (max-width: 768px) {
+        .hero h1 {
+          font-size: 28px;
+        }
+        .hero p {
+          font-size: 14px;
+          padding: 15px;
+          color: white;
+        }
+        .btn {
+          padding: 14px 9px;
+        }
+        .hero {
+          padding: 20px;
+        }
+        nav {
+          /* height: 200px; */
+          padding: 20px 0px;
+          flex-direction: column;
+          text-align: center;
+          overflow: hidden;
+        }
+        ul {
+          flex-direction: column;
+          text-align: center;
+        }
+        li {
+          margin-top: 10px;
+          /* display: none; */
+        }
+        span {
+          display: block;
+        }
+        nav h3 {
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span><i class="fa-solid fa-bars"></i></span>
+      <nav>
+        <h3>logo</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">services</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Welcome to Jnrsinem site</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, hic.
+          Doloribus totam quam molestiae tempore perspiciatis illo fuga labore
+          laboriosam?
+        </p>
+        <a href="#" class="btn">Our services</a>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
